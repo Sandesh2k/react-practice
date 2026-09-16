@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #f5f5f5;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  width: min(600px, calc(100% - 40px));
+  margin: 50px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 6px;
+}
+
+.todo-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #333;
+  color: white;
+}
+
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 18px 0;
+}
+
+.filter-tabs a {
+  padding: 9px 13px;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.filter-tabs a.active {
+  background: #333;
+  color: white;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.todo-item span {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+.todo-item input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.delete-button {
+  background: #d9534f;
+}
+
+.empty-state,
+.count {
+  text-align: center;
+  color: #666;
+}
+
+.empty-state {
+  padding: 20px;
+}

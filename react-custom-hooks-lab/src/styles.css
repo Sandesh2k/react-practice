@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+main {
+  width: min(1050px, calc(100% - 32px));
+  margin: 48px auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+article {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+}
+input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 7px;
+}
+.box {
+  padding: 25px;
+  border: 2px dashed #999;
+  text-align: center;
+  border-radius: 8px;
+}

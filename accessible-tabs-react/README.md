@@ -1,28 +1,9 @@
-# Accessible Tabs — React + TypeScript
+# Accessible Tabs
 
 Compound `<Tabs>` component using React Context, controlled/uncontrolled state, ARIA roles, roving tabindex, and Arrow Left/Right/Home/End keyboard navigation.
 
-## Run
-```bash
-npm install
-npm run dev
-```
+#### Output: 
 
-## Build
-```bash
-npm run build
-```
+![Output-1](<image-2.png>)
 
-## API
-```tsx
-<Tabs defaultValue="a">
-  <Tabs.List>
-    <Tabs.Trigger value="a">Tab A</Tabs.Trigger>
-    <Tabs.Trigger value="b">Tab B</Tabs.Trigger>
-  </Tabs.List>
-  <Tabs.Panel value="a">Panel A</Tabs.Panel>
-  <Tabs.Panel value="b">Panel B</Tabs.Panel>
-</Tabs>
-```
-
-Controlled mode uses `value` and `onValueChange`.
+![Output-2](image.png)
